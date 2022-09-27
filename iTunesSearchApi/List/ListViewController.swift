@@ -139,6 +139,25 @@ extension ListViewController: UISearchBarDelegate {
     }
 }
 
+// MARK: - UICollectionViewDataSource Implementation
+extension ListViewController {
+    override func collectionView(
+        _ collectionView: UICollectionView,
+        didSelectItemAt indexPath: IndexPath
+    ) {
+        guard let picture = dataSource.itemIdentifier(for: indexPath) else {
+            return
+        }
+        guard let image = picture.thumbnail else {
+            print("Invalid image")
+            return
+        }
+        let detailVC = DetailViewController()
+        detailVC.image = image
+        show(detailVC, sender: nil)
+    }
+}
+
 // MARK: - Layout Handling
 extension ListViewController {
     private func configureLayout() {
