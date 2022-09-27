@@ -30,6 +30,7 @@
 		3AA482ED28E2BFBD00E10441 /* SectionHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482EC28E2BFBD00E10441 /* SectionHeaderReusableView.swift */; };
 		3AA482EF28E2C12600E10441 /* PictureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482EE28E2C12600E10441 /* PictureCollectionViewCell.swift */; };
 		3AA482F128E2D36C00E10441 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482F028E2D36C00E10441 /* DetailViewController.swift */; };
+		3AA482F328E2D46E00E10441 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482F228E2D46E00E10441 /* UIView+IBInspectable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		3AA482EC28E2BFBD00E10441 /* SectionHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderReusableView.swift; sourceTree = "<group>"; };
 		3AA482EE28E2C12600E10441 /* PictureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionViewCell.swift; sourceTree = "<group>"; };
 		3AA482F028E2D36C00E10441 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3AA482F228E2D46E00E10441 /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				3AA482E028E2BD9600E10441 /* Dictionary+.swift */,
+				3AA482F228E2D46E00E10441 /* UIView+IBInspectable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				3AA482EB28E2BF2D00E10441 /* Section.swift in Sources */,
 				3AA482F128E2D36C00E10441 /* DetailViewController.swift in Sources */,
 				3AA4829D28E2B50100E10441 /* SceneDelegate.swift in Sources */,
+				3AA482F328E2D46E00E10441 /* UIView+IBInspectable.swift in Sources */,
 				3AA482DD28E2BCA900E10441 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
