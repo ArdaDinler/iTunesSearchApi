@@ -52,6 +52,14 @@ class ViewModel {
         ]
     }
 
+    /// This function be used for getting total number of pictures count from the all sections
+    func getAllSectionPicturesCount() -> Int {
+        if let array = (sections?.flatMap { $0.pictures }) {
+            return array.count
+        }
+        return 0
+    }
+
     /// This function for getting itunes software screenshot ulrs by using search query
     ///
     /// - Parameters:

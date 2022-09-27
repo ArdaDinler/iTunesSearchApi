@@ -54,7 +54,36 @@ class ListViewController: UICollectionViewController {
             guard let strongSelf = self,
                   items != nil else { return }
             strongSelf.applySnapshot(animatingDifferences: false)
+            if strongSelf.viewModel.getAllSectionPicturesCount() == 0 {
+                strongSelf.addEmptyView()
+            } else {
+                strongSelf.removeEmptyView()
+            }
         }.store(in: &bindings)
+    }
+
+    private func addEmptyView() {
+        let label = UILabel()
+        label.text = "No Data"
+        label.textColor = .black
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        view.addSubview(stackView)
+        collectionView.isHidden = true
+
+        NSLayoutConstraint.activate([
+            stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+        ])
+        stackView.addArrangedSubview(label)
+    }
+
+    private func removeEmptyView() {
+        if let emptyStackView = view.subviews.first(where: { $0 is UIStackView }) {
+            emptyStackView.removeFromSuperview()
+            collectionView.isHidden = false
+        }
     }
 
     private func makeDataSource() -> DataSource {
@@ -103,6 +132,7 @@ class ListViewController: UICollectionViewController {
     }
 }
 
+// MARK: - UISearchBarDelegate
 extension ListViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         viewModel.searchQuery = ""
