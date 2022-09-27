@@ -1,27 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XKM-8y-hyo">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--List View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="bU0-ow-ecq">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ListViewController" customModule="iTunesSearchApi" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <collectionViewController id="jIU-AV-7H8" customClass="ListViewController" customModule="iTunesSearchApi" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="gJZ-dj-pJ6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xa1-An-54j">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PictureCollectionViewCell" id="mqU-wR-YGv" customClass="PictureCollectionViewCell" customModule="iTunesSearch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TuP-hL-0iH">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HGL-RL-gMk" userLabel="Shadow View">
+                                            <rect key="frame" x="8" y="8" width="398" height="264"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                    <real key="value" value="0.29999999999999999"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                    <size key="value" width="0.0" height="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gY7-N6-2VJ">
+                                            <rect key="frame" x="8" y="8" width="398" height="264"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                    <size key="value" width="0.0" height="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="HGL-RL-gMk" firstAttribute="height" secondItem="gY7-N6-2VJ" secondAttribute="height" id="1Bw-Nu-9Rd"/>
+                                        <constraint firstAttribute="trailing" secondItem="HGL-RL-gMk" secondAttribute="trailing" constant="8" id="3zj-V5-mbO"/>
+                                        <constraint firstItem="gY7-N6-2VJ" firstAttribute="top" secondItem="TuP-hL-0iH" secondAttribute="top" constant="8" id="B0R-9p-rjB"/>
+                                        <constraint firstItem="gY7-N6-2VJ" firstAttribute="leading" secondItem="TuP-hL-0iH" secondAttribute="leading" constant="8" id="Dp1-CE-Udi"/>
+                                        <constraint firstAttribute="trailing" secondItem="gY7-N6-2VJ" secondAttribute="trailing" constant="8" id="E5a-gV-dYT"/>
+                                        <constraint firstItem="HGL-RL-gMk" firstAttribute="leading" secondItem="TuP-hL-0iH" secondAttribute="leading" constant="8" id="Hgi-Uw-z8r"/>
+                                        <constraint firstItem="HGL-RL-gMk" firstAttribute="top" secondItem="TuP-hL-0iH" secondAttribute="top" constant="8" id="Zpi-ih-Sfb"/>
+                                        <constraint firstItem="HGL-RL-gMk" firstAttribute="width" secondItem="gY7-N6-2VJ" secondAttribute="width" id="cjI-jp-0KJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="gY7-N6-2VJ" secondAttribute="bottom" constant="8" id="tZq-kp-tyW"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="414" height="280"/>
+                                <connections>
+                                    <outlet property="thumbnailView" destination="gY7-N6-2VJ" id="V8B-T7-NcC"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="jIU-AV-7H8" id="AC5-Tu-YD2"/>
+                            <outlet property="delegate" destination="jIU-AV-7H8" id="8Su-vw-2ov"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="TP2-N6-aWl"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EDs-6L-TTA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="119"/>
+            <point key="canvasLocation" x="808.69565217391312" y="88.392857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7nF-Ze-42p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XKM-8y-hyo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uEf-fO-6PG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jIU-AV-7H8" kind="relationship" relationship="rootViewController" id="Nj8-ko-mC8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RN0-qP-VlT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-101.44927536231884" y="88.392857142857139"/>
         </scene>
     </scenes>
     <resources>
