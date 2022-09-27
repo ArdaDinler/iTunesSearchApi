@@ -32,6 +32,8 @@
 		3AA482F128E2D36C00E10441 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482F028E2D36C00E10441 /* DetailViewController.swift */; };
 		3AA482F328E2D46E00E10441 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482F228E2D46E00E10441 /* UIView+IBInspectable.swift */; };
 		3AA482F528E2D52800E10441 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AA482F428E2D52800E10441 /* sample.json */; };
+		3AA482F728E2D67F00E10441 /* RequestServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482F628E2D67F00E10441 /* RequestServiceTests.swift */; };
+		3AA482F928E2D6B100E10441 /* DictionaryExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482F828E2D6B100E10441 /* DictionaryExtensionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		3AA482F028E2D36C00E10441 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3AA482F228E2D46E00E10441 /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
 		3AA482F428E2D52800E10441 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
+		3AA482F628E2D67F00E10441 /* RequestServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestServiceTests.swift; sourceTree = "<group>"; };
+		3AA482F828E2D6B100E10441 /* DictionaryExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,8 @@
 			children = (
 				3AA482F428E2D52800E10441 /* sample.json */,
 				3AA482B128E2B50600E10441 /* iTunesSearchApiTests.swift */,
+				3AA482F628E2D67F00E10441 /* RequestServiceTests.swift */,
+				3AA482F828E2D6B100E10441 /* DictionaryExtensionTests.swift */,
 			);
 			path = iTunesSearchApiTests;
 			sourceTree = "<group>";
@@ -400,7 +406,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA482F928E2D6B100E10441 /* DictionaryExtensionTests.swift in Sources */,
 				3AA482B228E2B50600E10441 /* iTunesSearchApiTests.swift in Sources */,
+				3AA482F728E2D67F00E10441 /* RequestServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
