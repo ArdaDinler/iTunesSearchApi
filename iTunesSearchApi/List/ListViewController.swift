@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListViewController: UIViewController {
+class ListViewController: UICollectionViewController {
     
     // MARK: - Life Cycles
     override func viewDidLoad() {
