@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire",
+        "state": {
+          "branch": "master",
+          "revision": "8dd85aee02e39dd280c75eef88ffdb86eed4b07b",
+          "version": null
+        }
+      },
+      {
+        "package": "Kingfisher",
+        "repositoryURL": "https://github.com/onevcat/Kingfisher.git",
+        "state": {
+          "branch": "master",
+          "revision": "26a5aee988318f1a57adc9b9c3e676ce318630a8",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
