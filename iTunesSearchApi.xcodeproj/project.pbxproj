@@ -27,6 +27,7 @@
 		3AA482E728E2BEB400E10441 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482E628E2BEB400E10441 /* ListViewModel.swift */; };
 		3AA482E928E2BF0200E10441 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482E828E2BF0200E10441 /* Picture.swift */; };
 		3AA482EB28E2BF2D00E10441 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482EA28E2BF2D00E10441 /* Section.swift */; };
+		3AA482ED28E2BFBD00E10441 /* SectionHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482EC28E2BFBD00E10441 /* SectionHeaderReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		3AA482E628E2BEB400E10441 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		3AA482E828E2BF0200E10441 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
 		3AA482EA28E2BF2D00E10441 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		3AA482EC28E2BFBD00E10441 /* SectionHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				3AA482EA28E2BF2D00E10441 /* Section.swift */,
+				3AA482EC28E2BFBD00E10441 /* SectionHeaderReusableView.swift */,
 			);
 			path = Section;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				3AA482D128E2BAB200E10441 /* ErrorModel.swift in Sources */,
 				3AA482E928E2BF0200E10441 /* Picture.swift in Sources */,
 				3AA482D328E2BB0300E10441 /* iTunesModel.swift in Sources */,
+				3AA482ED28E2BFBD00E10441 /* SectionHeaderReusableView.swift in Sources */,
 				3AA4829B28E2B50100E10441 /* AppDelegate.swift in Sources */,
 				3AA482D528E2BB5A00E10441 /* ListViewController.swift in Sources */,
 				3AA482E328E2BDD500E10441 /* Service.swift in Sources */,
