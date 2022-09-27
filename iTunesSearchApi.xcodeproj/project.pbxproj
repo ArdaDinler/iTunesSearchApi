@@ -99,6 +99,9 @@
 		3AA4829928E2B50100E10441 /* iTunesSearchApi */ = {
 			isa = PBXGroup;
 			children = (
+				3AA482CA28E2B5F800E10441 /* Models */,
+				3AA482CB28E2B62E00E10441 /* List */,
+				3AA482CC28E2B63700E10441 /* Detail */,
 				3AA4829A28E2B50100E10441 /* AppDelegate.swift */,
 				3AA4829C28E2B50100E10441 /* SceneDelegate.swift */,
 				3AA4829E28E2B50100E10441 /* ViewController.swift */,
@@ -125,6 +128,27 @@
 				3AA482BD28E2B50600E10441 /* iTunesSearchApiUITestsLaunchTests.swift */,
 			);
 			path = iTunesSearchApiUITests;
+			sourceTree = "<group>";
+		};
+		3AA482CA28E2B5F800E10441 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3AA482CB28E2B62E00E10441 /* List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		3AA482CC28E2B63700E10441 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
