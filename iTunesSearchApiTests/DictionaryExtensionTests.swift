@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import iTunesSearchApi
 
 class DictionaryExtensionTests: XCTestCase {
 

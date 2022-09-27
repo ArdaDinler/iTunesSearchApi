@@ -34,6 +34,11 @@
 		3AA482F528E2D52800E10441 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AA482F428E2D52800E10441 /* sample.json */; };
 		3AA482F728E2D67F00E10441 /* RequestServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482F628E2D67F00E10441 /* RequestServiceTests.swift */; };
 		3AA482F928E2D6B100E10441 /* DictionaryExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482F828E2D6B100E10441 /* DictionaryExtensionTests.swift */; };
+		3AA482FB28E2D7EC00E10441 /* iTunesSearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482FA28E2D7EC00E10441 /* iTunesSearchViewModelTests.swift */; };
+		3AA4830028E2DA3100E10441 /* 150kb.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA482FC28E2DA3000E10441 /* 150kb.png */; };
+		3AA4830128E2DA3100E10441 /* 100kb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AA482FD28E2DA3000E10441 /* 100kb.jpg */; };
+		3AA4830228E2DA3100E10441 /* 1mb.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA482FE28E2DA3000E10441 /* 1mb.png */; };
+		3AA4830328E2DA3100E10441 /* 324kb.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA482FF28E2DA3100E10441 /* 324kb.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +88,11 @@
 		3AA482F428E2D52800E10441 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
 		3AA482F628E2D67F00E10441 /* RequestServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestServiceTests.swift; sourceTree = "<group>"; };
 		3AA482F828E2D6B100E10441 /* DictionaryExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensionTests.swift; sourceTree = "<group>"; };
+		3AA482FA28E2D7EC00E10441 /* iTunesSearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesSearchViewModelTests.swift; sourceTree = "<group>"; };
+		3AA482FC28E2DA3000E10441 /* 150kb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 150kb.png; sourceTree = "<group>"; };
+		3AA482FD28E2DA3000E10441 /* 100kb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 100kb.jpg; sourceTree = "<group>"; };
+		3AA482FE28E2DA3000E10441 /* 1mb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1mb.png; sourceTree = "<group>"; };
+		3AA482FF28E2DA3100E10441 /* 324kb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 324kb.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +165,12 @@
 			isa = PBXGroup;
 			children = (
 				3AA482F428E2D52800E10441 /* sample.json */,
+				3AA482FE28E2DA3000E10441 /* 1mb.png */,
+				3AA482FD28E2DA3000E10441 /* 100kb.jpg */,
+				3AA482FC28E2DA3000E10441 /* 150kb.png */,
+				3AA482FF28E2DA3100E10441 /* 324kb.png */,
 				3AA482B128E2B50600E10441 /* iTunesSearchApiTests.swift */,
+				3AA482FA28E2D7EC00E10441 /* iTunesSearchViewModelTests.swift */,
 				3AA482F628E2D67F00E10441 /* RequestServiceTests.swift */,
 				3AA482F828E2D6B100E10441 /* DictionaryExtensionTests.swift */,
 			);
@@ -366,6 +381,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AA482F528E2D52800E10441 /* sample.json in Resources */,
+				3AA4830128E2DA3100E10441 /* 100kb.jpg in Resources */,
+				3AA4830228E2DA3100E10441 /* 1mb.png in Resources */,
+				3AA4830028E2DA3100E10441 /* 150kb.png in Resources */,
+				3AA4830328E2DA3100E10441 /* 324kb.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA482FB28E2D7EC00E10441 /* iTunesSearchViewModelTests.swift in Sources */,
 				3AA482F928E2D6B100E10441 /* DictionaryExtensionTests.swift in Sources */,
 				3AA482B228E2B50600E10441 /* iTunesSearchApiTests.swift in Sources */,
 				3AA482F728E2D67F00E10441 /* RequestServiceTests.swift in Sources */,
