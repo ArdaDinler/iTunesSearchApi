@@ -24,6 +24,9 @@
 		3AA482DF28E2BD6F00E10441 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482DE28E2BD6F00E10441 /* RequestService.swift */; };
 		3AA482E128E2BD9600E10441 /* Dictionary+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482E028E2BD9600E10441 /* Dictionary+.swift */; };
 		3AA482E328E2BDD500E10441 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482E228E2BDD500E10441 /* Service.swift */; };
+		3AA482E728E2BEB400E10441 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482E628E2BEB400E10441 /* ListViewModel.swift */; };
+		3AA482E928E2BF0200E10441 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482E828E2BF0200E10441 /* Picture.swift */; };
+		3AA482EB28E2BF2D00E10441 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482EA28E2BF2D00E10441 /* Section.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		3AA482DE28E2BD6F00E10441 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		3AA482E028E2BD9600E10441 /* Dictionary+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+.swift"; sourceTree = "<group>"; };
 		3AA482E228E2BDD500E10441 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		3AA482E628E2BEB400E10441 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		3AA482E828E2BF0200E10441 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		3AA482EA28E2BF2D00E10441 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +166,10 @@
 		3AA482CB28E2B62E00E10441 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				3AA482E428E2BE9900E10441 /* Cell */,
+				3AA482E528E2BEA200E10441 /* Section */,
 				3AA482D428E2BB5A00E10441 /* ListViewController.swift */,
+				3AA482E628E2BEB400E10441 /* ListViewModel.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -195,6 +204,22 @@
 				3AA482E028E2BD9600E10441 /* Dictionary+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3AA482E428E2BE9900E10441 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3AA482E828E2BF0200E10441 /* Picture.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3AA482E528E2BEA200E10441 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				3AA482EA28E2BF2D00E10441 /* Section.swift */,
+			);
+			path = Section;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,13 +361,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA482E728E2BEB400E10441 /* ListViewModel.swift in Sources */,
 				3AA482DF28E2BD6F00E10441 /* RequestService.swift in Sources */,
 				3AA482D128E2BAB200E10441 /* ErrorModel.swift in Sources */,
+				3AA482E928E2BF0200E10441 /* Picture.swift in Sources */,
 				3AA482D328E2BB0300E10441 /* iTunesModel.swift in Sources */,
 				3AA4829B28E2B50100E10441 /* AppDelegate.swift in Sources */,
 				3AA482D528E2BB5A00E10441 /* ListViewController.swift in Sources */,
 				3AA482E328E2BDD500E10441 /* Service.swift in Sources */,
 				3AA482E128E2BD9600E10441 /* Dictionary+.swift in Sources */,
+				3AA482EB28E2BF2D00E10441 /* Section.swift in Sources */,
 				3AA4829D28E2B50100E10441 /* SceneDelegate.swift in Sources */,
 				3AA482DD28E2BCA900E10441 /* Constants.swift in Sources */,
 			);
