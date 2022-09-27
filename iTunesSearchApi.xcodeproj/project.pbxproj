@@ -15,6 +15,12 @@
 		3AA482B228E2B50600E10441 /* iTunesSearchApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482B128E2B50600E10441 /* iTunesSearchApiTests.swift */; };
 		3AA482BC28E2B50600E10441 /* iTunesSearchApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482BB28E2B50600E10441 /* iTunesSearchApiUITests.swift */; };
 		3AA482BE28E2B50600E10441 /* iTunesSearchApiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482BD28E2B50600E10441 /* iTunesSearchApiUITestsLaunchTests.swift */; };
+		3AA482D128E2BAB200E10441 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482D028E2BAB200E10441 /* ErrorModel.swift */; };
+		3AA482D328E2BB0300E10441 /* iTunesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482D228E2BB0300E10441 /* iTunesModel.swift */; };
+		3AA482D528E2BB5A00E10441 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482D428E2BB5A00E10441 /* ListViewController.swift */; };
+		3AA482D828E2BBFD00E10441 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3AA482D728E2BBFD00E10441 /* Alamofire */; };
+		3AA482DB28E2BC0900E10441 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3AA482DA28E2BC0900E10441 /* Kingfisher */; };
+		3AA482DD28E2BCA900E10441 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA482DC28E2BCA900E10441 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,10 @@
 		3AA482B728E2B50600E10441 /* iTunesSearchApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesSearchApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA482BB28E2B50600E10441 /* iTunesSearchApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesSearchApiUITests.swift; sourceTree = "<group>"; };
 		3AA482BD28E2B50600E10441 /* iTunesSearchApiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesSearchApiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3AA482D028E2BAB200E10441 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		3AA482D228E2BB0300E10441 /* iTunesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesModel.swift; sourceTree = "<group>"; };
+		3AA482D428E2BB5A00E10441 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		3AA482DC28E2BCA900E10441 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA482DB28E2BC0900E10441 /* Kingfisher in Frameworks */,
+				3AA482D828E2BBFD00E10441 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +145,8 @@
 		3AA482CA28E2B5F800E10441 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3AA482D028E2BAB200E10441 /* ErrorModel.swift */,
+				3AA482D228E2BB0300E10441 /* iTunesModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -140,6 +154,7 @@
 		3AA482CB28E2B62E00E10441 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				3AA482D428E2BB5A00E10441 /* ListViewController.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -161,6 +176,7 @@
 		3AA482CE28E2B96E00E10441 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				3AA482DC28E2BCA900E10441 /* Constants.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -188,6 +204,10 @@
 			dependencies = (
 			);
 			name = iTunesSearchApi;
+			packageProductDependencies = (
+				3AA482D728E2BBFD00E10441 /* Alamofire */,
+				3AA482DA28E2BC0900E10441 /* Kingfisher */,
+			);
 			productName = iTunesSearchApi;
 			productReference = 3AA4829728E2B50100E10441 /* iTunesSearchApi.app */;
 			productType = "com.apple.product-type.application";
@@ -260,6 +280,10 @@
 				Base,
 			);
 			mainGroup = 3AA4828E28E2B50100E10441;
+			packageReferences = (
+				3AA482D628E2BBFD00E10441 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				3AA482D928E2BC0900E10441 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 3AA4829828E2B50100E10441 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -303,8 +327,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA482D128E2BAB200E10441 /* ErrorModel.swift in Sources */,
+				3AA482D328E2BB0300E10441 /* iTunesModel.swift in Sources */,
 				3AA4829B28E2B50100E10441 /* AppDelegate.swift in Sources */,
+				3AA482D528E2BB5A00E10441 /* ListViewController.swift in Sources */,
 				3AA4829D28E2B50100E10441 /* SceneDelegate.swift in Sources */,
+				3AA482DD28E2BCA900E10441 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +690,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3AA482D628E2BBFD00E10441 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		3AA482D928E2BC0900E10441 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3AA482D728E2BBFD00E10441 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AA482D628E2BBFD00E10441 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		3AA482DA28E2BC0900E10441 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AA482D928E2BC0900E10441 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3AA4828F28E2B50100E10441 /* Project object */;
 }
